@@ -17,7 +17,7 @@
     This command runs the script and creates groups based on the information in the 'GroupsCreation.csv' file located in the same directory as the script.
 
 .INPUTS
-    None. This script does not accept pipeline input.
+    A csv file is needed as an input with the following headers : GroupName;Description;OU;GroupScope;GroupCategory;mail
 
 .OUTPUTS
     This script does not produce any output to the pipeline. It generates a log file in the script's directory.
