@@ -22,7 +22,12 @@ This repository is a compilation of PowerShell scripts that I have developed and
 To use any of the scripts in this repository, simply download or clone the repository, navigate to the desired script, and execute it within a PowerShell environment with the necessary privileges. Always review and understand the script before running it.
 
 ## Scripts
+### AD Maintenance and Administration
+Scripts in this category assist in the regular maintenance and administration of your Active Directory.
 
+- **CreateAccounts.ps1**: Create Accounts in AD.
+- **DeleteAccounts.ps1**: Delete Accounts in AD.
+- **GroupsCreation.ps1**: Create Groups in AD.
 
 
 ## Prerequisites
