@@ -42,7 +42,7 @@ Scripts in this category assist in the regular maintenance and administration of
     ```
 2. Navigate to the script you want to use:
     ```sh
-    cd AD-PowerShell-Scripts
+    cd AD_PowerShell_Scripts
     ```
 3. Execute the script in PowerShell:
     ```sh
