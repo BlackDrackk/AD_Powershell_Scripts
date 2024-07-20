@@ -17,7 +17,7 @@
     This command runs the script and deletes accounts listed in the 'DeleteAccounts.csv' file located in the same directory as the script.
 
 .INPUTS
-    A csv file is needed as an input with the following header : AccountName.
+    None. This script does not accept pipeline input.
 
 .OUTPUTS
     This script does not produce any output to the pipeline. It generates a log file in the script's directory.
