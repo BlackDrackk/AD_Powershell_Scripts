@@ -6,7 +6,7 @@
     This script is used to create groups in Active Directory based on information provided in a CSV file.
 
 .PARAMETER CsvPath
-    Specifies the path to the CSV file containing the group details. If not provided, the script defaults to a CSV file named 'GroupsCreation.csv' in the same directory as the script.
+    Specifies the path to the CSV file containing the following headers 'GroupName;Description;OU;GroupScope;GroupCategory;mail' and the group details. If not provided, the script defaults to a CSV file named 'GroupsCreation.csv' in the same directory as the script.
 
 .EXAMPLE
     .\Create-ADGroups.ps1 -CsvPath "C:\Path\To\GroupsCreation.csv"
@@ -17,7 +17,7 @@
     This command runs the script and creates groups based on the information in the 'GroupsCreation.csv' file located in the same directory as the script.
 
 .INPUTS
-    A csv file is needed as an input with the following headers : GroupName;Description;OU;GroupScope;GroupCategory;mail
+    None. This script does not accept pipeline input.
 
 .OUTPUTS
     This script does not produce any output to the pipeline. It generates a log file in the script's directory.
@@ -27,7 +27,6 @@
     - Review the CSV file for accuracy before running the script to prevent accidental group creations.
 
 .REQUIREMENTS
-    - Windows PowerShell 5.1 or later.
     - Active Directory module for PowerShell.
 
 .VERSION
