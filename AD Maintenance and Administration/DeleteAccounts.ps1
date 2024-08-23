@@ -20,21 +20,17 @@
     None. This script does not accept pipeline input.
 
 .OUTPUTS
-    This script does not produce any output to the pipeline. It generates a log file in the script's directory.
+    It generates a log file in the script's directory and the csv file with data retrieved.
 
 .NOTES
     - Ensure you have the necessary permissions to delete accounts in Active Directory.
     - Review the CSV file for accuracy before running the script to prevent accidental deletions.
 
-.REQUIREMENTS
-    - Windows PowerShell 5.1 or later.
-    - Active Directory module for PowerShell.
-
 .VERSION
     1.1
 
 .AUTHOR
-    Owen L.
+    Drackk
 
 .LICENSE
     This script is licensed under the MIT License. Use it responsibly and ensure compliance with your organization's policies.
