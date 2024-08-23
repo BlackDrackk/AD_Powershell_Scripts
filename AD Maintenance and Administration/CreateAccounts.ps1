@@ -20,7 +20,7 @@
     None. This script does not accept pipeline input.
 
 .OUTPUTS
-    This script does not produce any output to the pipeline. It generates a log file in the script's directory.
+    It generates a log file in the script's directory and a csv file with all the info retreived 
 
 .NOTES
     - Ensure you have the necessary permissions to create accounts in Active Directory.
@@ -33,7 +33,7 @@
     2.2
 
 .AUTHOR
-    Owen L.
+    Drackk
 
 .LICENSE
     This script is licensed under the MIT License. Use it responsibly and ensure compliance with your organization's policies.
@@ -45,9 +45,8 @@ param (
 
 Import-Module ActiveDirectory
 
-$domDN = (Get-ADDomain).DistinguishedName
+
 $domUPN = (Get-ADDomain).DNSRoot
-$domSID = (Get-ADDomain).DomainSID
 $domNETBIOS = (Get-ADDomain).NetbiosName
 
 Function PasswordGenerator {
