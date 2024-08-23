@@ -20,24 +20,23 @@
     None. This script does not accept pipeline input.
 
 .OUTPUTS
-    This script does not produce any output to the pipeline. It generates a log file in the script's directory.
+    It generates a log file in the script's directory and a csv file with the data retrieved.
 
 .NOTES
     - Ensure you have the necessary permissions to create groups in Active Directory.
     - Review the CSV file for accuracy before running the script to prevent accidental group creations.
 
-.REQUIREMENTS
-    - Active Directory module for PowerShell.
-
 .VERSION
     2.1
 
 .AUTHOR
-    Owen L.
+    Drackk
 
 .LICENSE
     This script is licensed under the MIT License. Use it responsibly and ensure compliance with your organization's policies.
 #>
+
+Import-Module ActiveDirectory
 
 # Function to check if a group exists in Active Directory
 function Check-Group {
